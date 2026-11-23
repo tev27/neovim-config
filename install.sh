@@ -5,3 +5,4 @@ if [[ $? -gt 0 ]]; then
 fi
 
 ln -s $(realpath init.lua) $(realpath ~/.config/nvim/init.lua)
+ln -s $(realpath plugins) $(realpath ~/.config/nvim/plugins)
