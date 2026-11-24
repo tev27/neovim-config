@@ -28,3 +28,12 @@ g.mapleader = ','
 local which_key = require('which-key')
 vim.keymap.set('n', '<leader>?', function() which_key.show({global = false}) end)
 vim.keymap.set('i', '<leader>?', function() which_key.show() end)
+
+vim.pack.add({
+	{
+		src = "https://github.com/rose-pine/neovim",
+		name = "rose-pine",
+	},
+})
+require("rose-pine").setup()
+vim.cmd("colorscheme rose-pine")
